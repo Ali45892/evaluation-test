@@ -91,7 +91,7 @@ The workflow runs automatically:
 
 ## Task 5: Deployment Task
 
-Location: `task5/deploy_playbook.yml`
+Location: `task5/deploy.yml`
 
 This Ansible playbook deploys the Flask application to a remote Ubuntu VM by:
 - Installing Docker and Docker Compose
@@ -100,7 +100,7 @@ This Ansible playbook deploys the Flask application to a remote Ubuntu VM by:
 ### How to run
 ```bash
 # Update inventory.ini with your server details
-ansible-playbook -i inventory.ini task5/deploy_playbook.yml
+ansible-playbook -i inventory.ini task5/deploy.yml
 ```
 
 ## Task 6: Monitoring & Alerting
